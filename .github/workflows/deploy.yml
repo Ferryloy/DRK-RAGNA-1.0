@@ -31,11 +31,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Update
-      run: apt-get update
-
     - name: Install FFmpeg
-      run: sudo apt-get install -y ffmpeg
+      run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y ffmpeg
 
     - name: Start application with timeout
       run: |
