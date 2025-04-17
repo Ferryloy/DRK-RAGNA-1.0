@@ -35,7 +35,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y ffmpeg
 
     - name: Start application with timeout
-      run: npm start  # Limite l'exécution a 50000h 59m 50s
+      run: npm start  # Limite l'exécution á 50000h 59m 50s
 
     - name: Save state (Optional)
       run: ./save_state.sh
